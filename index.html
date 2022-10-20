@@ -12,33 +12,43 @@
     <h1>Hello jQuery</h1>
     <hr style="width: 600px; margin-left: 0; border: 2px solid;">
 
+    <!-- Seção 1) Digitação de nome em formulário. -->
     <h2>1) Digitando nome</h2>
     Qual o seu nome?<br>
-    <input type="text" name="" id="nome"> <br><br>
-    <div class="seuNome"></div>
+    <input type="text" name="" id="nome"> 
+
+    <br class="espacos1">
+    <br class="espacos1">
+
+    <div class="saudacao"></div>
 
     <input type="button" value="Clique aqui" id="aqui">
-    <br class="abaixoBotao">
+    <br class="espacos1">
 
     <script type="text/javascript">
+
         $(document).ready(function() {
             $("#aqui").click(function() {
                 
-                $('#aqui').remove()
-                $(".abaixoBotao").remove()
+                $("#nome").css("visibility", "hidden");
+                $('#aqui').remove();
+                $(".espacos1").remove();
                 
-                $(".seuNome").html('Olá, ' + $('#nome').val() + '. Seu nome foi validado e será utilizado como referência em todo este ambiente');
-                
-                
+                let nome = $('#nome').val();
+                let saudacao = $('.saudacao');
+
+                saudacao.html(`Olá, <strong>${nome}</strong>. Seu nome foi validado e será utilizado como referência em todo este ambiente.`);
+
             })
         });
     </script>
     <br>
     <hr style="width: 600px; margin-left: 0;">
 
+    <!-- Seção 2) Interação com botão em AJAX. -->
     <h2>2) Utilizando AJAX</h2>
-    <h3>A ligeira raposa</h3>
-        O fragmento de cifra antiga dizia o seguinte:
+    <h3>Cifras ancestrais</h3>
+        O fragmento de cifra ancestral dizia o seguinte:
     <br><br>
     <input type="button" value="Revelar cifra" id="mais">
 </body>
