@@ -11,6 +11,28 @@ $(document).ready(function() {
 
         saudacao.html(`Olá, <strong>${nome}</strong>. Seu nome foi validado e será utilizado como referência em todo este ambiente.`);
 
+       
+
     })
 });
  
+
+// Script Seção 2) Interação com botão em AJAX.
+$(document).ready(function() {
+
+    
+
+    $('#mais').click(function() {
+
+        $('#mais').remove();
+        $('.info').css("width", "500px")
+
+        $.ajax({url:"conteudo.txt", success: function(resultado) {
+            $('.info').html(resultado);
+        }});
+
+       
+    });
+
+
+});
