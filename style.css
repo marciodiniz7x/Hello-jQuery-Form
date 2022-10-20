@@ -1,9 +1,23 @@
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(45deg, #2aeef5, blueviolet);
+    
+}
+
+.form {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    
 }
 
 #aqui, #mais, .calcular {
-    background-color: #f52af5;
+    background-color: #2a9af5;
     color: white;
     font-weight: bold;
     border: none;
