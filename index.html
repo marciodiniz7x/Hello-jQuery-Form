@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello jQuery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <script src="jquery-3.6.1.min.js"></script>
 </head>
 <body>
@@ -14,7 +17,9 @@
 
     <!-- Seção 1) Digitação de nome em formulário. -->
     <h2>1) Digitando nome</h2>
+
     Qual o seu nome?<br>
+
     <input type="text" name="" id="nome"> 
 
     <br class="espacos1">
@@ -25,31 +30,19 @@
     <input type="button" value="Clique aqui" id="aqui">
     <br class="espacos1">
 
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-            $("#aqui").click(function() {
-                
-                $("#nome").css("visibility", "hidden");
-                $('#aqui').remove();
-                $(".espacos1").remove();
-                
-                let nome = $('#nome').val();
-                let saudacao = $('.saudacao');
-
-                saudacao.html(`Olá, <strong>${nome}</strong>. Seu nome foi validado e será utilizado como referência em todo este ambiente.`);
-
-            })
-        });
-    </script>
     <br>
     <hr style="width: 600px; margin-left: 0;">
 
     <!-- Seção 2) Interação com botão em AJAX. -->
     <h2>2) Utilizando AJAX</h2>
+
     <h3>Cifras ancestrais</h3>
-        O fragmento de cifra ancestral dizia o seguinte:
-    <br><br>
+
+    O fragmento de cifra ancestral dizia o seguinte:
+
+    <br class="espaco2"><br class="espaco2">
+
     <input type="button" value="Revelar cifra" id="mais">
+
 </body>
 </html>
