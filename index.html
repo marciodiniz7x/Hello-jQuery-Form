@@ -15,16 +15,19 @@
     <h2>1) Digitando nome</h2>
     Qual o seu nome?<br>
     <input type="text" name="" id="nome"> <br><br>
-    <input type="button" value="Clique aqui" id="aqui">
     <div class="seuNome"></div>
+
+    <input type="button" value="Clique aqui" id="aqui">
+    <br class="abaixoBotao">
 
     <script type="text/javascript">
         $(document).ready(function() {
             $("#aqui").click(function() {
-                alert('Olá, ' + $('#nome').val() + '!');
-                let nome = document.querySelector('#nome');
-                let seuNome = document.querySelector('.seuNome');
-                seuNome.innerHTML = nome
+                
+                $('#aqui').remove()
+                $(".abaixoBotao").remove()
+                
+                $(".seuNome").html('Olá, ' + $('#nome').val() + '. Seu nome foi validado e será utilizado como referência em todo este ambiente');
                 
                 
             })
