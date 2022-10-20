@@ -2,17 +2,17 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#aqui, #mais {
-    background-color: rgb(245, 42, 245);
+#aqui, #mais, .calcular {
+    background-color: #f52af5;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 12px;
     padding: 10px;
     cursor: pointer;
-    transition: 200ms;
+    transition: 300ms;
 }
 
-#aqui:hover, #mais:hover {
+#aqui:hover, #mais:hover, .calcular:hover {
     background-color: blueviolet;
 }
