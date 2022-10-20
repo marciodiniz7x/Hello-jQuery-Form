@@ -44,3 +44,25 @@ input {
 #aqui:hover, #mais:hover, .calcular:hover {
     background-color: rgb(43, 101, 226);
 }
+
+/* ////////////// */
+/* Animações */
+/* ////////////// */
+
+.animaInfo {
+    animation: surgir 1.2s linear;
+}
+
+@keyframes surgir {
+    0% {
+        opacity: 0%;
+    }
+
+    60% {
+        opacity: 40%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

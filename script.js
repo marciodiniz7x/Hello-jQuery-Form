@@ -14,6 +14,7 @@ $(document).ready(function() {
         } else {
 
             validar = true;
+            saudacao.addClass('animaInfo')
 
             $("#nome").css("visibility", "hidden");
             $('#aqui').remove();
@@ -34,11 +35,16 @@ $(document).ready(function() {
 
         } else {
 
+            let info = $('.info');
+            info.css("width", "500px");
+            info.addClass('animaInfo')
+
             $('#mais').remove();
-            $('.info').css("width", "500px");
+            
+
 
             $.ajax({url:"conteudo.txt", success: function(resultado) {
-            $('.info').html(resultado);
+            info.html(resultado);
             }});
         }
 
@@ -59,7 +65,13 @@ $(document).ready(function() {
                 let valor1 = Number($('.valor1').val());
                 let valor2 = Number($('.valor2').val());
                 let media = (valor1 + valor2) / 2;
-                let res = $('.res')
+                let res = $('.res');
+
+                res.addClass('animaInfo');
+
+                setTimeout(() => {
+                    res.removeClass('animaInfo');
+                }, 1200);
                 
                 res.html(`<strong>${nome}</strong>, nosso sistema calculou a média entre <strong><span style="color: #2a9af5;">${valor1}</span></strong> e <strong><span style="color: #2a9af5;">${valor2}</span></strong>. <br> E o resultado foi: <strong> <span style="color: #2a9af5;">${media}</span></strong>`);
                 break;
