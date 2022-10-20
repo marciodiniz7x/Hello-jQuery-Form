@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(45deg, #2aeef5, blueviolet);
+    background: linear-gradient(45deg, #2af5da, blueviolet);
     
 }
 
@@ -11,19 +11,26 @@ body {
     left: 0;
     right: 0;
 }
+
+input {
+    border: 1px solid #02dd5d;
+    border-radius: 8px;
+}
+
 .form {
     
     background: white;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 30px;
     width: 500px;
     margin: 0 auto;
     text-align: left;
     
+    
 }
 
 #aqui, #mais, .calcular {
-    background-color: #2a9af5;
+    background-color: #02ddae;
     color: white;
     font-weight: bold;
     border: none;
@@ -34,5 +41,5 @@ body {
 }
 
 #aqui:hover, #mais:hover, .calcular:hover {
-    background-color: blueviolet;
+    background-color: rgb(43, 101, 226);
 }
