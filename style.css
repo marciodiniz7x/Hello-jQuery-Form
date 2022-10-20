@@ -15,6 +15,7 @@ body {
 input {
     border: 1px solid #02dd5d;
     border-radius: 8px;
+    padding: 5px;
 }
 
 .form {
