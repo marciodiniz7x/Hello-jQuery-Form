@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello jQuery</title>
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+
+    <h1>Hello jQuery</h1>
+    <hr style="width: 600px; margin-left: 0; border: 2px solid;">
+
+    <h2>1) Digitando nome</h2>
+    Qual o seu nome?<br>
+    <input type="text" name="" id="nome"> <br><br>
+    <input type="button" value="Clique aqui" id="aqui">
+    <div class="seuNome"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#aqui").click(function() {
+                alert('Olá, ' + $('#nome').val() + '!');
+                let nome = document.querySelector('#nome');
+                let seuNome = document.querySelector('.seuNome');
+                seuNome.innerHTML = nome
+                
+                
+            })
+        });
+    </script>
+    <br>
+    <hr style="width: 600px; margin-left: 0;">
+
+    <h2>2) Utilizando AJAX</h2>
+    <h3>A ligeira raposa</h3>
+        O fragmento de cifra antiga dizia o seguinte:
+    <br><br>
+    <input type="button" value="Revelar cifra" id="mais">
+</body>
+</html>
