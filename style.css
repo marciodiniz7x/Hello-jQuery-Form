@@ -2,6 +2,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(45deg, #2af5da, blueviolet);
+   
     
 }
 
@@ -23,11 +24,11 @@ input {
     background: white;
     padding: 30px;
     border-radius: 30px;
-    width: 500px;
+    width: 70vw;
     margin: 0 auto;
     text-align: left;
     box-shadow: 1px 1px 20px 1px #02ddae;
-    
+    margin-bottom: 20vh;
 }
 
 #aqui, #mais, .calcular {
